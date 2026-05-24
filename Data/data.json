@@ -1,0 +1,72 @@
+[
+  {
+    "uuid": "4f9b2d8e-7c1a-4b6f-9e3d-8a2c1b5f6e7d",
+    "location": "Edinburgh, Scotland",
+    "timestamp": "2025-10-31T23:15:00Z",
+    "title": "The Phantom Piper",
+    "text": "While walking through the underground vaults, the temperature suddenly dropped. I heard the faint, echoing sound of bagpipes coming from a walled-off tunnel, but there was absolutely no one else down there."
+  },
+  {
+    "uuid": "8a3c5e2f-1b9d-4c7a-8f6e-2d1b9c3f4e5a",
+    "location": "Hooghly, West Bengal, India",
+    "timestamp": "2026-01-14T02:30:00Z",
+    "title": "The River Mist",
+    "text": "I was walking near the ghats late at night. The fog rolling off the river suddenly gathered together and took the shape of a tall figure standing completely still on the water's surface before dissolving."
+  },
+  {
+    "uuid": "1e7c9f4b-3d2a-4f8e-9b6c-5a1d8e2f7b3c",
+    "location": "Salem, Massachusetts, USA",
+    "timestamp": "2025-09-15T21:45:00Z",
+    "title": "Footsteps in the Attic",
+    "text": "Staying in a historic bed and breakfast. Every night exactly at 2:45 AM, heavy boots would pace back and forth directly above my bed. The owner confirmed the next morning that the attic has been sealed shut for decades."
+  },
+  {
+    "uuid": "6b2d8e4f-1a7c-4b9e-8c3d-5f1a2b7e9d6c",
+    "location": "Bhangarh Fort, Rajasthan, India",
+    "timestamp": "2024-12-05T18:10:00Z",
+    "title": "Whispers in the Ruins",
+    "text": "We lingered near the main gate just as the sun went down. The wind stopped completely, but clear as day, a woman's voice whispered right into my left ear. I turned around and my friends were 50 feet away."
+  },
+  {
+    "uuid": "3c5a1b9d-7e2f-4c8a-9d6b-1f8e2c4a5b7d",
+    "location": "London, United Kingdom",
+    "timestamp": "2026-03-22T04:00:00Z",
+    "title": "The Train That Never Arrived",
+    "text": "Waiting alone at an abandoned Tube platform. I felt the rush of wind and heard the screech of brakes of an approaching train. The doors opened, but there was no train visible. Just an empty, dark tunnel."
+  },
+  {
+    "uuid": "9f4b1e7c-2d3a-4e8f-8c5b-7a1d6e3f2b4c",
+    "location": "Aokigahara, Japan",
+    "timestamp": "2025-04-12T14:20:00Z",
+    "title": "The Compass Spin",
+    "text": "We were hiking on the main trail. My digital compass started spinning wildly, and my phone battery drained from 80% to zero in three seconds. When I looked up, a shadow darted between the trees."
+  },
+  {
+    "uuid": "2d8e6b4f-7c1a-4b9e-9c3d-5f1a8b7e2d6c",
+    "location": "Waverly Hills Sanatorium, Kentucky, USA",
+    "timestamp": "2023-11-18T01:10:00Z",
+    "title": "Room 502",
+    "text": "Taking a guided tour through the old hospital. I snapped a quick photo with the flash on. When I reviewed it later, there was a clear silhouette of a nurse standing right behind the tour guide."
+  },
+  {
+    "uuid": "5a1b3c9d-8e2f-4c7a-9d6b-1f7e2c4a8b5d",
+    "location": "Cape of Good Hope, South Africa",
+    "timestamp": "2025-07-08T03:55:00Z",
+    "title": "The Glowing Ship",
+    "text": "Looking out over the water during a severe storm. For a brief moment during a lightning flash, I saw the massive outline of a 17th-century galleon glowing with a faint red light, struggling against the waves."
+  },
+  {
+    "uuid": "7c9f1e4b-3d2a-4f8e-8b6c-5a1d2e8f7b3c",
+    "location": "Poveglia Island, Italy",
+    "timestamp": "2024-06-21T15:30:00Z",
+    "title": "The Plague Bell",
+    "text": "The island has been abandoned for years and the bell tower was stripped. Yet, while on a boat a mile offshore, all four of us clearly heard a heavy church bell tolling three times."
+  },
+  {
+    "uuid": "1b9d8a3c-2f5e-4c7a-9f6e-3d1b4c9f2e5a",
+    "location": "Estes Park, Colorado, USA",
+    "timestamp": "2025-02-14T22:00:00Z",
+    "title": "The Hotel Party",
+    "text": "Walking past the empty ballroom of the Stanley Hotel. I could hear glasses clinking and big band music playing faintly. I pushed open the heavy wooden doors and the room was completely empty and dark."
+  }
+]
