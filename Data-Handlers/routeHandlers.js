@@ -1,7 +1,7 @@
-import { getData } from './Utility/getData.js'
-import { sendResponse } from './Utility/sendResponse.js'
-import { parseBody } from './Utility/parseJSONBody.js'
-import { addnewSighting } from './Utility/addnewSighting.js'
+import { getData } from '../Utility/getData.js'
+import { sendResponse } from '../Utility/sendResponse.js'
+import { parseBody } from '../Utility/parseJSONBody.js'
+import { addnewSighting } from '../Utility/addnewSighting.js'
 
 export async function handleGet(res) {
     const data = await getData()

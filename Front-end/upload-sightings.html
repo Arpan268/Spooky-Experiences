@@ -14,19 +14,22 @@
     <div id="content">
         <h3>FROM THE<br>OTHER SIDE!</h3>
         <h2>ADD SIGHTINGS</h2>
-        <div id='inputarea'>
+        <form id='inputarea'>
             <p>Title:</p>
-            <input type="text" placeholder="A ghostly encounter" class='inputel'>
+            <input type="text" placeholder="A ghostly encounter" class='inputel' id = "title">
             <p>Time/Date:</p>
-            <input type="datetime-local" class='inputel'>
+            <input type="datetime-local" class='inputel'  id = "time-date">
 
             <p>Location:</p>
-            <input type="text" placeholder="Location..." class='inputel'>
+            <input type="text" placeholder="Location..." class='inputel' id = "location">
             <p>Details:</p>
-            <textarea type="text" placeholder="Details..." id='inputdetails'></textarea>
-        </div>
-        <button id="submit">SUBMIT</button>
+            <textarea type="text" placeholder="Details..." id='details'></textarea>
+
+            <button id="submit">SUBMIT</button>
+        </form>      
+        <p id = "message"></p>
     </div>
+    <script type = "module" src = "upload-sightings.js"></script>
 </body>
 
 </html>

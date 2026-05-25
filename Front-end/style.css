@@ -45,7 +45,7 @@ footer {
     border-radius: 5px;
 }
 
-#inputdetails {
+#details {
     width: 800px;
     padding: 10px;
     border-radius: 5px;
@@ -71,5 +71,25 @@ footer {
     font-weight: bold;
     text-decoration: underline;
     margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.card{
+    background-color: white;
+    max-width: 600px;
+    color: black;
+    text-align: left;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.card p {
+    max-width: 100%;
+}
+
+#load-more {
+    margin-top: -10px;
+    margin-bottom: 20px;
     cursor: pointer;
 }
