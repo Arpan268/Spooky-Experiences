@@ -61,7 +61,7 @@ footer {
 }
 
 #submit {
-    width: 800px;
+    width: 820px;
     height: 50px;
     padding: 10px 20px;
     border: 1px solid white;
@@ -70,6 +70,7 @@ footer {
     color: white;
     font-weight: bold;
     text-decoration: underline;
+    margin-top: 10px;
     margin-bottom: 40px;
     cursor: pointer;
 }
