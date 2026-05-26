@@ -1,6 +1,6 @@
 import http from "node:http"
 import { testPath } from "./Utility/serveStatic.js"
-import { handleGet, handlePost } from "./Data-Handlers/routeHandlers.js"
+import { handleGet, handlePost, handleNews } from "./Data-Handlers/routeHandlers.js"
 
 const dirname = import.meta.dirname
 
@@ -16,6 +16,9 @@ const server = http.createServer(async (req, res) => {
     }
     else if (!req.url.startsWith('/api')) {
         await testPath(req, res, dirname)
+    }
+    else if (req.url === '/api/news') {
+        return handleNews(res)
     }
 })
 

@@ -94,3 +94,10 @@ footer {
     margin-bottom: 20px;
     cursor: pointer;
 }
+
+#news {
+    background-color: rgb(44, 44, 44);
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 600px;
+}
