@@ -48,6 +48,12 @@ function buttonListeners() {
 
     deleteButtons.forEach(button => {
         button.addEventListener('click', async (event) => {
+
+            const isSure = window.confirm("Are you sure you want to delete this anomaly?")
+
+            if(!isSure)
+                return
+            
             const id = event.target.getAttribute('data-id')
             const response = await fetch(`/api/${id}`, {
                 method: 'DELETE'
