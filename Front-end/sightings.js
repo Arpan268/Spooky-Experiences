@@ -27,17 +27,62 @@ function renderCards() {
     <article class = 'card'>
     <p>${dateTime}, ${data.location}</p>
     <h2>${data.title}</h2>
-    <p>${data.text}</p>
+    <p class = 'story-text'>${data.text}</p>
+
+    <button class="update-btn" data-id="${data.id}">Update Story</button>
+    <button class="delete-btn" data-id="${data.id}">Delete Story</button>
     </article>`
     })
 
     cardcontainer.innerHTML = card
     currentIndex += batchSize
 
-    if(currentIndex >= sightings.length) {
+    if (currentIndex >= sightings.length) {
         loadMore.style.display = 'none'
     }
 }
 
+function buttonListeners() {
+    const updateButtons = document.querySelectorAll('.update-btn')
+    const deleteButtons = document.querySelectorAll('.delete-btn')
+
+    deleteButtons.forEach(button => {
+        button.addEventListener('click', async (event) => {
+            const id = event.target.getAttribute('data-id')
+            const response = await fetch(`/api/${id}`, {
+                method: 'DELETE'
+            })
+            if (response.ok) {
+                event.target.closest('.card').remove()
+            }
+        })
+    })
+
+    updateButtons.forEach(button => {
+        button.addEventListener('click', async (event) => {
+            const id = event.target.getAttribute('data-id')
+            const newText = prompt('Enter the new story text:')
+
+            if (!newText) return
+
+            const response = await fetch(`/api/${id}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ text: newText })
+            })
+            if (response.ok) {
+                const card = event.target.closest('.card')
+                card.querySelector('.story-text').innerText = newText
+            }
+        })
+    })
+
+}
+
+
 renderCards()
 loadMore.addEventListener('click', renderCards)
+
+buttonListeners()

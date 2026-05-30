@@ -1,25 +1,15 @@
-import http from "node:http"
-import { testPath } from "./Utility/serveStatic.js"
-import { handleGet, handlePost, handleNews } from "./Data-Handlers/routeHandlers.js"
+import express from "express"
+import { handleGet, handlePost, handleNews, handleDelete, handleUpdate } from "./Data-Handlers/routeHandlers.js"
 
-const dirname = import.meta.dirname
+const app = express()
 
-const server = http.createServer(async (req, res) => {
+app.use(express.static('Front-end'))
+app.use(express.json())
 
-    if (req.url === '/api') {
-        if (req.method === 'GET') {
-            return await handleGet(res)
-        }
-        else if (req.method === 'POST') {
-            return await handlePost(req, res)
-        }
-    }
-    else if (!req.url.startsWith('/api')) {
-        await testPath(req, res, dirname)
-    }
-    else if (req.url === '/api/news') {
-        return handleNews(res)
-    }
-})
+app.get('/api', handleGet)
+app.post('/api', handlePost)
+app.get('/api/news', handleNews)
+app.delete('/api/:id', handleDelete)
+app.put('/api/:id', handleUpdate)
 
-server.listen(8000, () => console.log(`Server running on http://localhost:8000`))
+app.listen(8000, () => console.log(`Server running on http://localhost:8000`))

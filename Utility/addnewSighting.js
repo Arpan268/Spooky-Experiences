@@ -1,13 +1,10 @@
-import path from 'node:path'
-import fs from 'node:fs/promises'
-import { getData } from './getData.js'
+import { pool } from '../Data/db.js'
 
 export async function addnewSighting(data) {
     try {
-        const sightings = await getData()
-        sightings.unshift(data)
-        const pathdata = path.join('Data', 'data.json')
-        await fs.writeFile(pathdata, JSON.stringify(sightings, null, 2), 'utf8')
+        const query = `INSERT INTO spooky (location, timestamp, title, text) VALUES ($1, $2, $3, $4)`
+        const values = [data.location, data.timestamp, data.title, data.text]
+        await pool.query(query, values)
     }
 
     catch (err)
